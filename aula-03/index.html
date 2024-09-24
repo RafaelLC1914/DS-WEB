@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Aula-03</title>
+</head>
+<body>
+    <h1>Bem-vindo!</h1>
+    <p> Este é um exeplo simples de uma página HTML </p>
+    <h3> Listas não numeradas </h3>
+    <ul>
+        <li> Item 1</li>
+        <li> Item 2</li>
+        <ul>
+            <li>  Item 2.1 </li>
+            <ul> 
+                <li> Item 2.1.1</li>
+            </ul>
+        </ul>
+    </ul>
+
+    <h3> Listas numeradas </h3>
+    <ol>
+        <li> Primeiro</li>
+        <li> Segundo </li>
+        <ol>
+            <li> Definição </li>
+        </ol>
+    </ol>
+
+    <h3> Listas de Definição </h3>
+    <dl>
+        <dt> HTML</dt>
+        <dd> HyperText Markup Language </dd>
+
+        <dt> CSS </dt>
+        <dd> Cascading Style Sheets </dd>
+    </dl>
+
+
+    <h3>Elementos em nível de bloco</h3>
+    <p> elemento em nível de bloco sempre começa em uma nova linha e os navegadores adicionam automaticamente algum espaço (uma margem) antes e depois do elemento.</p>
+
+    <p>Um elemento de nível de bloco sempre ocupa toda a largura disponível (estende-se para a esquerda e para a direita tanto quanto possível).</p>
+
+    <p>Dois elementos de bloco comumente usados ​​são: < p > e < div >.</p>
+
+    <p>O elemento < p > define um parágrafo em um documento HTML.</p>
+
+    <p>O elemento < div > define uma divisão ou seção em um documento HTML.</p>
+
+
+    <h3>Div - Divisão, Seção ou Bloco</h3>
+
+    <div style="border:solid 10px; padding-left: 30px;padding-right:30px margin: 20px"> Olá, eu sou uma div> </div>
+
+    <div style="background-color:black;color:white;padding:20px;">
+        <h2>London</h2>
+        <p>London is the capital city of England. It is the most populous city in the United Kingdom, with a metropolitan area of over 13 million inhabitants.</p>
+        <p>Standing on the River Thames, London has been a major settlement for two millennia, its history going back to its founding by the Romans, who named it Londinium.</p>
+        </div>
+
+
+        <p>Minha mãe tem olhos <span style="color:blue;font-weight:bold;">azuis</span> e meu pai tem os olhos <span style="color:darkolivegreen;font-weight:bold;">verde escuro</span></p>
+
+
+        <h3>Input - Tipos de entrada de dados</h3>
+        <br> <br> <br>
+        <label> Input do tipo Text </label>
+        <input type="text">
+        <br><br>
+        <br> <br> <br>
+        <label> Input do tipo Number </label>
+        <input type="number">
+        <br> <br>
+        <br> <br> <br>
+        <label> Input do tipo Password </label>
+        <input type="password">
+        <br> <br>
+        <br> <br> <br>
+        <input type="radio" value="HTML">
+        <label> HTML </label>
+        <br><br>
+        <br><br><br>
+        <input type="checkbox" value=HTML>
+        <label> CSS</label>
+        <br> <br>
+        <br><br><br>
+        <input type="button" value="BOTÃO 1">
+        <br><br>
+        <br><br><br>
+        <input type="submit" value="BOTÃO 2">
+
+        <h3>Form - Formulário</h3>
+<form action="/enviar" method="post">
+    <label>nome do usuario</label><br>
+    <input type="text" name=" name" name="teste"><br>
+    <label>placeholder</label><br>
+    <input type="text" name=" placeholder" placeholder="teste"><br>
+    <label>required</label><br>
+    <input type="text" name="required" required> <br>
+    <label> value</label><br>
+    <input type="text" name="value" value="teste "> <br>
+    <label> maxlength</label><br>
+    <input type="text" name="maxlength" maxlength="5"> <br>
+    <label> disabled</label><br>
+    <input type="text" name="disabled" disabled> <br>
+    <label> readonly</label><br>
+    <input type="text" name="readonly" valeu="readonly" readonly><br>
+    <label> campo com uma boa validação </label><br>
+    <input type="text" name="boa validação" maxlength="8" required placeholder="campo com uma boa validação"><br>
+  
+
+
+    <textarea name="mensagem"></textarea><br>
+    <select name="opcoes">
+    <option>Opção 1</option>
+    <option>Opção 2</option>
+    <option>Opção 3</option>
+    <option>Opção 4</option>
+    </select>
+
+    <input type="submit">
+
+</form>
+
+<p> name: Nome do campo, utilizado no envio dos dados.</p>
+<p>  value: Valor padrão do campo.</p>
+<p>  placeholder: Texto exibido dentro do campo até que o usuário comece a digitar.</p>
+<p>  required: Torna o campo obrigatório.´</p>
+<p>  maxlength: Limita o número de caracteres inseridos.</p>
+<p>  disabled: Desabilita o campo, impedindo interação.</p>
+<p>  readonly: Torna o campo apenas leitura.</p>
+
+
+
+</body>
+</html>
