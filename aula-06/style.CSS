@@ -1,0 +1,43 @@
+p{
+    
+        font-family: "Jacquarda Bastarda 9", serif;
+        font-weight: 400;
+        font-style: normal;
+      
+
+}
+.uppercase{
+    text-transform:uppercase;
+}
+.lowercase{
+    text-transform:lowercase;
+}
+.capitalize{
+    text-transform:capitalize;
+
+}
+.Indent{
+    text-indent: 5opx;
+
+}
+.shadow{
+    text-shadow:1px 1px #FF0000;
+
+}
+.shadow-blur{
+    text-shadow:1px 1px 3px #00FF00; 
+
+}
+.overline{
+    text-Decoration:overline;
+
+}
+.line-through{
+    text-Decoration: line-through;
+}
+.underline{
+    text-Decoration:underline;
+}
+.overline-underline{
+    text-Decoration:overline underline;
+}
