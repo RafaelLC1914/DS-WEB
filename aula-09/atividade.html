@@ -1,0 +1,108 @@
+<html lang="pt">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initia
+l-scale=1.0">
+<title>Exemplo Scale</title>
+
+<style>
+body{
+background: linear-gradient(45deg, #140e36, #9b59b6);
+}
+
+.flex{
+    display: flex;
+    gap: 20px;
+}
+h3{
+    margin-top: 20px;
+}
+
+
+.box1 {
+width: 100px;
+height: 100px;
+background-color: #3498db;
+transition: transform 0.5s;
+}
+.box1:hover {
+transform: scale(1.5);
+}
+.box2 {
+width: 100px;
+height: 100px;
+background-color: #3498db;
+transition: transform 0.5s;
+}
+.box2:hover {
+transform: rotate(45deg);
+}
+.box3 {
+width: 100px;
+height: 100px;
+background-color: #3498db;
+transition: transform 0.5s;
+}
+.box3:hover {
+transform: translate(50px, 50px);
+}
+.box4 {
+width: 100px;
+height: 100px;
+background-color: #3498db;
+transition: border-radius 2s;
+
+}
+.box4:hover {
+    border-radius: 80%;
+}
+.box5 {
+width: 100px;
+height: 100px;
+background-color: #3498db;
+opacity: 1;
+transition: opacity 0.5s;
+}
+.box5:hover {
+opacity: 0.5;
+}
+@keyframes moverEfeito {
+0% {
+transform: translateX(0);
+background-color: red;
+}
+50% {
+transform: translateX(200px);
+background-color: yellow;
+}
+100% {
+transform: translateX(0);
+background-color: green;
+}
+}
+/* Aplica a animação ao elemento */
+.animado{
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+}
+.animado:hover {
+    background-color: red;
+    animation: moverEfeito 4s ease-in-out infinite;
+}
+
+
+</style>
+</head>
+<body>
+<div></div>
+<center><div class="flex">    
+    <div class="box1"><h3>scale</h3></div><br>
+    <div class="box2"><h3>rotate<h3></h3></div><br>
+    <div class="box3"><h3>translate</h3></div><br>
+    <div class="box4"><h3>border-radius</h3></div><br>
+    <div class="box5"><h3>opacity</h3></div><br>
+    <div class="animado" ><h3>Keyframes + animations</h3></div>
+</div></center> 
+</body>
+</html>
