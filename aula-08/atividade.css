@@ -1,0 +1,51 @@
+
+img{
+    width:50px;
+    height:50px;
+    margin-right:100px ;
+
+}
+.menu-top{
+    background-color: green;
+    justify-content: space-around;
+    padding: 20px;
+    align-items: center;
+    display: flex;
+
+
+}
+
+    .nav{
+        background-color: black;
+        width:900px;
+        height: 700px;
+        border: 1px solid greenyellow;
+        text-align: center;
+        margin: auto;
+        display: block;
+
+
+        
+}
+h3{
+    color:white;
+    margin-bottom: 20px;
+  
+}
+
+
+nav{
+    display:inline-block;
+    width:33.3333333333%;
+    height: 100px;
+    background-color: orange;
+    justify-content: space-between;
+    
+}
+a{
+    display:al;
+    text-decoration:none;
+    margin: 10px;
+    text-align: center;
+    display: block;
+}

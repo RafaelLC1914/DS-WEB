@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo-class</title>
+    <style>
+        /*exemplo de hover*/
+        .button-hover:hover{
+            background-color: lightgreen;
+            width: 100px;
+            height: 100px;
+        }
+        /*exemplo de active*/
+        .button-active:active {
+            transform: scale(1.5);
+        }
+        /*exemplo de focus*/
+        .input-focus{
+            border-color:lightsalmon;
+            background-color: lightgreen;
+        }
+        /*exemplo de checked*/
+        .radio-checked:checked{
+            transform: scale(1.5);
+        }
+        .checkbox-checked:checked{
+            transform: scale(1.5);
+        }
+        /*exemplo de pseudoclasse para link*/
+        a:link{
+            color:chocolate;
+        }
+        a:visited{
+            color:lightpink;
+        }
+        div:empty{
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h3>Exemplo de Hover</h3>
+        <button class="button-hover">cliqui aqui</button>
+    </div>
+    <div>
+        <h3>Exemplo de active</h3>
+        <button class="button-active">cliqui aqui</button>
+    </div>
+    <div>
+        <h3>Exemplo de Focus</h3>
+        <input type="text"class="input-focus" placeholder="cliqui aqui">
+    </div>
+    <div>
+        <h3>exemplo de checked</h3>
+        <label>Radio button</label>
+        <input type ="radio" class="radio-checked"><input type="radio">
+        <label>checkbox</label>
+        <input type="checkbox">
+    </div>
+    <div>
+        <h3>exemplo Pseudoclasses para link</h3>
+        <a href="#">link 1</a>
+        <a href="#">link 2</a>
+        <a href="#">link 3</a>
+        <a href="#">link 4</a>
+        <a href="#">link 5</a>
+        <a href="#">link 6</a>
+        <a href="#">link 7</a>
+        <a href="#">link 8</a>
+        <a href="#">link 9</a>
+        <a href="#">link 10</a>
+    </div>
+    <div class="div-vazia"></div>
+
+
+</body>
+</html>
