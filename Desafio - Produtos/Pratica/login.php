@@ -28,10 +28,10 @@ if ($stmt->rowCount() > 0) {
     $_SESSION['email'] = $user['email'];
 
     // Redireciona para index.php
-    header("Location: index.php");
+    //header("Location: index.php");
     exit();
 } else {
-    echo "<script>alert('Login inválido! Verifique os dados e tente novamente.'); window.location.href='login.php';</script>";
+   // echo "<script>alert('Login inválido! Verifique os dados e tente novamente.'); window.location.href='login.php';</script>";
 }}
 ?>
 
@@ -63,8 +63,8 @@ if ($stmt->rowCount() > 0) {
                     </select>
 
                     <br><br>
-                    <label>email: </label>
-                    <input type="text" name="email" required>
+                    <label>E-mail: </label>
+                    <input type="text" name="E-mail" required>
                     <br> <br>
                     
                     <label>Senha: </label>

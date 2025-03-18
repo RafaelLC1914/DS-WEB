@@ -12,10 +12,10 @@ function validarDadosProduto(){
     }
 
     //Verificação de nome.
-    if(formulario.nome.value.length  < 3 || formulario.nome.value == ""){
+    if(formulario.nome.value.length  < 1 || formulario.nome.value == ""){
         formulario.nome.focus();
         document.getElementById('erro-codigo').innerHTML = "";
-        document.getElementById('erro-nome').innerHTML = "Verifique se o nome possui mais de 2 caracteres.";
+        document.getElementById('erro-nome').innerHTML = "Verifique se o nome possui mais de 1 caracteres.";
         document.getElementById('erro-estoque').innerHTML = "";
         document.getElementById('erro-preco').innerHTML = "";
         return false;   
@@ -31,7 +31,7 @@ function validarDadosProduto(){
         return false;
     }
     //Verificação Do Preco.
-    if (document.getElementById('preco').value < 0) {
+    if (document.getElementById('preco').value <= 0 ) {
         document.getElementById('preco').focus();
         document.getElementById('erro-codigo').innerHTML = "";
         document.getElementById('erro-nome').innerHTML = "";

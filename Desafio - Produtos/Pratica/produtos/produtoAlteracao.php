@@ -1,10 +1,21 @@
+<?php
+session_start();
+include_once('..\conexao.php');
+
+// Verifica se o usuário está logado corretamente
+if (!isset($_SESSION['login']) || !isset($_SESSION['email'])) {
+    header("Location: ..\login.php");
+    exit();
+}
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Business System - Produto</title>
-    <link rel="shortcut icon" href="./assets/img/icon.svg" type="imagex/png">
+    <link rel="shortcut icon" href="../assets/img/icon.svg" type="imagex/png">
     <link rel="stylesheet" href="../assets/style/style.css">
 <body>
     <div class="menu">
@@ -49,7 +60,7 @@
                 <p class="erro-input" id="erro-estoque"></p>
 
                 <label for="preco">Preço produto:</label>
-                <input type="number" id="preco" name="preco" VALUE="<?=$precoProduto?>">
+                <input type="float" id="preco" name="preco" VALUE="<?=$precoProduto?>">
                 <p class="erro-input" id="erro-preco"></p>
 
                 <input type="submit">

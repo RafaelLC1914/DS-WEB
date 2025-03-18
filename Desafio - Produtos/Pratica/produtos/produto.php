@@ -1,3 +1,14 @@
+<?php
+session_start();
+include_once('..\conexao.php');
+
+// Verifica se o usuário está logado corretamente
+if (!isset($_SESSION['login']) || !isset($_SESSION['email'])) {
+    header("Location: ..\login.php");
+    exit();
+}
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -19,22 +30,22 @@
     <div class="container">
         <hr>
         <div class="formulario">
-            <form action="insertionProduto.php" method="POST" name="formulario" onsubmit="return validarDadosProduto()">
+            <form action="insertionProduto.php" method="POST" name="formulario" onsubmit="return validarDadosProduto()" >
                 <label for="codigo">Codigo do produto: </label>
-                <input type="number" id="codigo" name="codigo" >
-                <p class="erro-input" id="erro-codigo"></p>
+                <input type="number" id="codigo" name="codigo" value = "<?=isset ($_SESSION['valorCodigo']) ? $_SESSION['valorCodigo'] : "";?>" > 
+                <p class="erro-input" id="erro-codigo"><?=isset ($_SESSION['erroCodigo']) ? $_SESSION['erroCodigo'] : "";?></p>
               
                 <label for="nome">nome do produto: </label>
-                <input type="text" id="nome" name="nome">
-                <p class="erro-input" id="erro-nome"></p>
+                <input type="text" id="nome" name="nome" value = "<?=isset ($_SESSION['valorNome']) ? $_SESSION['valorNome'] : "";?>">
+                <p class="erro-input" id="erro-nome"><?=isset ($_SESSION['erroNome']) ? $_SESSION['erroNome'] : "";?></p>
               
                 <label for="estoque">estoque:</label>
-                <input type="number" id="estoque" name="estoque">
-                <p class="erro-input" id="erro-estoque"></p>
+                <input type="number" id="estoque" name="estoque" value = "<?=isset ($_SESSION['valorEstoque']) ? $_SESSION['valorEstoque'] : "";?>">
+                <p class="erro-input" id="erro-estoque"><?=isset ($_SESSION['erroEstoque']) ? $_SESSION['erroEstoque'] : "";?></p>
 
                 <label for="preco">preço:</label>
-                <input type="number" id="preco" name="preco">
-                <p class="erro-input" id="erro-preco"></p>
+                <input type="float" id="preco" name="preco" value = "<?=isset ($_SESSION['valorPreco']) ? $_SESSION['valorPreco'] : "";?>">
+                <p class="erro-input" id="erro-preco"><?=isset ($_SESSION['erroPreco']) ? $_SESSION['erroPreco'] : "";?></p>
        
                 <input type="submit">
             </form>
@@ -75,6 +86,7 @@
                 </tr>
             ";
         }
+
     ?>
     </table>
     </div>

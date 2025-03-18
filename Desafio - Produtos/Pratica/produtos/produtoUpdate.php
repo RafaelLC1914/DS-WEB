@@ -1,4 +1,15 @@
 <?php
+session_start();
+include_once('..\conexao.php');
+
+// Verifica se o usuário está logado corretamente
+if (!isset($_SESSION['login']) || !isset($_SESSION['email'])) {
+    header("Location: ..\login.php");
+    exit();
+}
+
+?>
+<?php
     if($_SERVER['REQUEST_METHOD'] != 'POST'){
         echo"<script>alert('Está faltando o método POST')
             window.location.href = '.\produto.php';
