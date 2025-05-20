@@ -1,0 +1,163 @@
+body{
+    margin: 0px;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    border: 1px solid #e7e7e7;
+    background-color: #f3f3f3;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: #666;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: #06c881;
+}
+
+li a.active {
+    color: white;
+    background-color: #04AA6D;
+}
+
+.link-usuario{
+    float: right;
+}
+
+
+
+/* ------- Estilo para Formulários --------- */
+
+.container {
+    margin: 20px auto 0 auto;
+    width: 600px;
+}
+.formulario {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 30px 30px 30px;
+    border-radius: 8px;
+    background: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+form{
+    width: 100%;
+}
+label {
+    display: block;
+    margin-top: 10px;
+}
+input, textarea {
+    width: 100%;
+    padding: 8px 0px 8px 0px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+input[type=submit] {
+    margin-top: 15px;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background-color: #0FBB93;
+    color: white;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+input:hover[type=submit] {
+    background-color: #11D7A9;
+}
+
+/* Mensagens de erro */
+.erro-input {
+    color: red;
+    font-size: 15px;
+}
+
+/* --- Estilo para a foto de perfil ---*/
+
+.div-photo{
+    padding-right: 20px;
+}
+
+.div-photo p{
+   color: #666;
+   text-align: center;
+}
+
+.photo-user{
+    border-radius: 100px;
+    height: 200px;
+    width: 200px;
+}
+
+.div-button-edit{
+    /*text-align: center; uma das outras formas utilizadas para alinhar o elemento filho dentro de uma div*/
+    margin: 0 auto;
+    width: 180px;
+}
+
+.button-edit{
+
+    margin-top: 15px;
+    width: 180px;
+    padding: 10px;
+    border: 1px solid #0D9D7C;
+    background-color: white;
+    color: #0D9D7C;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.button-edit:hover{
+    border: 1px solid #0D9D7C;
+    background-color: #0D9D7C;
+    color: white;
+}
+
+/* ---- Style da tabela de produtos ---- */
+.produtos {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  .produtos td, th {
+    text-align: center;
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+  
+  .produtos tr:nth-child(even){background-color: #e6e6e6;}
+  
+  .produtos tr:hover {background-color: #ddd;}
+  
+  .produtos th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 10px;
+    padding-right: 10px;;
+    text-align: center;
+    background-color: rgb(135, 222, 138);
+    color: white;
+  }
+
+.botao1{
+    background-color: #c9fdea;
+    border-radius: 10px;
+    border: solid 1px;
+    cursor: pointer;
+}
